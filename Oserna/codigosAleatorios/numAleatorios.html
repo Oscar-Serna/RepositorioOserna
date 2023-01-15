@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros aleatorios</title>
+    <link rel="stylesheet" href="CSS/numAleatorios.css">
+    <script src="JS/numAleatorios.js" defer></script>
+    <script src="JS/time.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C766FEWJ7B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C766FEWJ7B');
+    </script>
+</head>
+<body>
+    <section class="sectionInputs">
+        <input type="number" placeholder="" class="inputNumCod">
+        <input type="button" value="Generar codigos" class="inputGenerarCod" onclick="generarCodigos()">
+    </section>
+    <section class="alerts">
+        <p class="pAlert"></p>
+        <p class="numero"></p>
+    </section>
+    <section id="body"></section>
+</body>
+</html>

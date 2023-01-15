@@ -1,0 +1,316 @@
+main{
+    padding-top: 0rem;
+}
+/* Hero */
+.hero{
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 0 5px gray;
+    background: url(../Images/heroBackgroud.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+    .heroFilter{
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(0.9);
+    }
+    .heroContent{
+        position: absolute;
+        left: 25%;
+        transform: translateX(-25%);
+        top: 7rem;
+        color: #fff;
+    }
+    .offerTitles{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+    }
+        .offerLimitedH1{
+            font-family: 'Righteous', cursive;
+            font-weight: lighter;
+            font-size: 34px;
+        }
+        .offerLimitedP{
+            font-family: 'Roboto', sans-serif;
+            color: rgba(255, 255, 255, 0.753);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+        }
+
+    .urOfferCode{
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        text-align: center;
+    }
+        .urOfferCodeP{
+            font-family: 'Roboto', sans-serif;
+        }
+        .offerCode{
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            transform: rotate();
+        }
+
+    .registerDate{
+        text-align: center;
+        padding-top: 4rem;
+    }
+        .registerDateText{
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    .contOfferAvailable{
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        color: rgba(255, 255, 255, 0.85);
+        cursor:default;
+    }
+        .offerAvailableH3{
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Righteous', cursive;
+            font-weight: lighter;
+
+        }
+            .offerAvailable{
+                color: rgba(255, 255, 255, 0.7);
+                transition: 400ms ease;
+                text-decoration: dotted underline 2.5px rgba(255, 255, 255, 0);
+            }
+            .offerAvailable:hover{
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: dotted underline 2.5px #fff;
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+                transition: 700ms ease;
+            }
+
+/*Types Discount */
+.cards{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+    .cardTP{
+        width: 18rem;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+    .des10{
+        box-shadow: 0 0 5px rgb(0, 62, 138);
+    }
+    .des15{
+        box-shadow: 0 0 5px rgb(0, 62, 138);
+    }
+    .des25{
+        box-shadow: 0 0 5px rgb(0, 62, 138);
+    }
+    .des30{
+        box-shadow: 0 0 5px rgb(0, 62, 138);
+    }
+        /* Top Card */
+        .topCardTP{
+            position: relative;
+            width: 100%;
+            height: 11.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            /* background-color: rgba(40, 140, 202, 0.1); */
+            background-color: #E9F3FA;
+            z-index: 5;
+        }
+            .contImgDiscountCardTP{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .imgDiscount{
+                    position: relative;
+                    top: -8px;
+                    width: 9rem;
+                    height: auto;
+                    padding-top: 1rem;
+                }
+            .contArrowCardTP{
+                width: 100%;
+                height: auto;
+                background-color: rgb(204, 216, 232);
+                display: flex;
+                justify-content: center;
+                border-radius: 0 0 10px 10px;
+            }
+            .borderUp{
+                border-radius: 10px 10px 0 0;
+            }
+                .imgArrow{
+                    width: 1.5rem;
+                    transition: 200ms ease;
+                }
+                .arrow180deg{
+                    transform: rotate(180deg);
+                    transition: 200ms ease;
+                }
+
+        /* Bottom Card */
+        .bottomCardTP{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: rgba(40, 140, 202, 0.1);
+            margin-top: -27.5rem;
+            z-index: -1;
+        }
+        .bCTP-I{
+            visibility: hidden;
+            opacity: 0;
+            transition: 600ms ease;
+        }
+        .bCTP-A{
+            visibility: visible;
+            opacity: 1;
+            margin-top: 0;
+            transition: 400ms ease;
+        }
+            .contTitleBottomCardTP{
+                text-align: center;
+                padding: .75rem 0 0;
+            }
+                .titleBottomCardTP{
+                    font-size: 18px;
+                    font-family: 'Righteous', cursive;
+                    font-weight: lighter;
+                    transition: 500ms ease;
+                }
+                .titleBCTP-I{
+                    font-size: 15px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0ms ease;
+                }
+
+            .listProductsBottomCardTP{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+                list-style: none;
+            }
+                .itemProductBottomCardTP{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding-left: 1.25rem;
+                }
+                    .pItemPBCTP{
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    }
+                    .imgItemPBCTP{
+                        width: 15px;
+                        height: 15px;
+                    }
+
+/* Titles */
+.h1, .h2, .h3{
+    margin: 0;
+    padding: 0;
+}
+
+.p{
+    margin: 0;
+    padding: 0;
+}
+
+/* User select none */
+.imgArrow, .imgDiscount{
+    user-select: none;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 1441px) {
+
+
+    @media screen and (max-width: 1025px) {
+        
+    }
+
+    @media screen and (max-width: 769px) {
+        
+    }
+
+    @media screen and (max-width: 426px) {
+        
+        .hero{
+            background: url(../Images/Sin\ título-1.png);
+            height: 30em;
+            background-size: 100%;
+            background-position: center;
+            /* background-attachment: fixed; */
+        }
+        .heroFilter{
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(0.25);
+        }
+
+        .heroContent{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 6.5rem;
+            color: #fff;
+        }
+        .offerLimitedH1{
+            font-size: 180%;
+        }
+        .urOfferCode{
+            padding-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            text-align: center;
+        }
+        .contOfferAvailable{
+            left: 1rem;
+            bottom: .5rem;
+        }
+        .registerDate{
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .registerDateText{
+            line-height: 1.7rem;
+        }
+        .cards{
+            gap: 2rem;
+        }
+        .cardTP{
+            margin-bottom: 0;
+        }
+    }
+}

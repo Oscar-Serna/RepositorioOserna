@@ -1,0 +1,30 @@
+.sectionInputs{
+    width: 100%;
+    height: auto;
+    padding: .7rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.inputNumCod{
+    width: 4rem;
+}
+
+
+.alertSuccess-des{
+
+}
+.alerts{
+    display: flex;
+    gap: .5rem;
+}
+.alertSuccess-act{
+    color: green;
+}
+
+.alertProgress-act{
+    color: blue;
+}
+.numero{
+    color: red;
+}
